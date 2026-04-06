@@ -1,37 +1,63 @@
-# ShopNest Store: Power BI Data Analysis Project
-## This project features a comprehensive Power BI dashboard designed to analyze the sales performance, logistics, and customer satisfaction of the **ShopNest Store**. By connecting multiple datasets—including orders, customers, products, and reviews—the dashboard provides actionable insights into revenue trends and operational challenges.
+## 📊 ShopNest Store – Power BI Dashboard Project
+### This project features a comprehensive Power BI dashboard designed to analyze the sales performance, logistics, and customer satisfaction of the ShopNest Store. By connecting multiple datasets—including orders, customers, products, and reviews—the dashboard provides actionable insights into revenue trends and operational challenges.
 
-### Key Features & Insights
+### 🔍 Project Overview
+* Developed an **interactive Power BI dashboard** to analyze e-commerce performance using multiple related datasets
+* Built **data relationships** across orders, customers, products, and payments for accurate analysis
+* Designed a **one-page dashboard** for quick and actionable business insights
 
-* **Revenue Performance**:
-    * **Growth Trends**: Analyzed year-over-year revenue, showing a significant increase from 2016 to 2018. 
-    * **Seasonal Patterns**: Identified peak sales in **Q4**, highlighting the impact of the festive season on business momentum. 
-    * **Top Categories**: Discovered that **Health & Beauty**, **Watches & Gifts**, and **Bed Bath Table** are the primary revenue drivers. 
+### 🎯 Key Objectives
+* Identify **top-performing product categories**
+* Analyze **delivery performance (on-time vs delayed)**
+* Understand **customer payment behavior**
+* Evaluate **product ratings and satisfaction**
+* Track **sales trends across states, time, and seasons**
 
-* **Logistics & Operational Efficiency**:
-    * **Delivery Performance**: Compared on-time vs. delayed orders month-over-month. Insights show that delays tend to increase during peak sales periods at the end of the year. 
-    * **Delay Hotspots**: Identified that high-volume categories like **Bed Bath Table** face the most logistical challenges. 
+### 🛠️ Key Features & Analysis
 
-* **Customer & Geographic Analysis**:
-    * **Regional Distribution**: Used a map visual to show high sales concentration in states like **São Paulo** and **Rio de Janeiro**, contrasted with lower performance in northern regions. 
-    * **Payment Preferences**: Found a strong customer preference for **Credit Cards**, followed by **Boleto**. 
-    * **Product Satisfaction**: Visualized the top 10 highest and bottom 10 lowest-rated products to help stakeholders address quality or service issues. 
+#### 📦 Sales & Category Insights
+* Calculated **Total Sales = Price + Freight Value**
+* Identified top categories like **Health & Beauty, Watches & Gifts**
+* Highlighted revenue-driving segments
 
----
+#### 🚚 Delivery Performance Analysis
+* Measured **Delayed vs On-Time orders**
+* Found higher delays in high-volume categories
+* Identified **seasonal spikes in delays during peak months**
 
-### Technical Implementation
+#### 💳 Payment Behavior Analysis
+* Used **distinct order count by payment type**
+* Found **credit cards as dominant payment method**
+* Analyzed customer transaction preferences
 
-* **Data Modeling**: Established a robust relational schema connecting eight distinct datasets including Customers, Sellers, Orders, Order Items, Payments, Reviews, Products, and Geolocation. 
-* **DAX Measures**: Developed custom calculations for key business metrics, including:
-    * **Total Sales**: `sum(Price) + sum(Freight Value)`. 
-    * **Delayed Orders**: Calculated using a `DISTINCTCOUNT` of Order IDs where the delivery date exceeded the estimate. 
-    * **Average Rating**: Calculated using `AVERAGEX` across related review tables. 
-* **UI/UX Strategy**: Implemented a strategic color scheme: **Green** for high performance, **Red** for areas requiring attention (like delayed orders), and **Blue** for neutral trend data. 
+#### ⭐ Product Rating Analysis
+* Ranked **Top 10 & Bottom 10 products**
+* Used **average review scores**
+* Identified quality and customer satisfaction gaps
 
----
+#### 🌍 State-wise Sales Analysis
+* Compared **high vs low performing states**
+* Found sales concentration in **São Paulo, Rio de Janeiro, Minas Gerais**
+* Used **map + bar charts with cross-filtering**
 
-### Visualizations Included
-* **Clustered Column & Bar Charts**: For category and monthly comparisons. 
-* **Donut Chart**: For payment method distribution. 
-* **Line Charts**: For seasonal and yearly revenue trends. 
-* **Map Visual**: For interactive geographic sales analysis. 
+#### 📈 Time-based Analysis
+* **Monthly:** Compared on-time vs delayed orders
+* **Quarterly:** Identified **Q4 sales peak (festive impact)**
+* **Yearly:** Observed **strong revenue growth from 2016 to 2018**
+
+### 🎨 Dashboard Design Strategy
+* **Green:** High performance (sales, on-time delivery)
+* **Red:** Low performance (delays, low ratings)
+* **Blue:** Neutral comparisons (trends, revenue)
+* Ensured **clear visual storytelling and easy interpretation**
+
+### 📊 Business Impact
+* Generated **actionable insights** on sales, logistics, and customer behavior
+* Identified **high-demand categories and underperforming areas**
+* Enabled **data-driven decision-making**
+
+### 🚀 Tools & Skills Used
+* Power BI (Dashboard Development, DAX Measures)
+* Data Modeling & Relationships
+* Data Visualization & Storytelling
+* Business Analysis
